@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import axios from 'axios';
-import Navbar from '../src/users/components/Navbar';
-import Footer from '../src/users/components/Footer';
-import Card from '../src/users/components/Card';
+import Navbar from '../src/components/Navbar';
+import Footer from '../src/components/Footer';
+import Card from '../src/components/Card';
 import { useEffect, useState } from 'react';
 
 type Painting = {
@@ -46,7 +46,7 @@ const IndexPage = () => {
   return (
     <div className="flex flex-col ">
       <Navbar />
-      <div className="w-screen h-full bg-gray-900 text-white ">
+      <div className="w-screen h-full bg-gray-900 text-white overflow-scroll ">
         <h1 className="text-white pt-5 font-bold text-2xl text-center md:pb-6 ">
           My Paintings
         </h1>
